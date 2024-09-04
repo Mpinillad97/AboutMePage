@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+    <header>
+        <h1>Mi Página de Presentación</h1>
+    </header>
+    <main>
+        <!-- Secccion Sobre Mí -->
+         <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>
+                ¡Hola! Mi nombre es Mateo Pinilla, tengo 27 años y soy de Medellín, Colombia. Aunque mi formación inicial es en Negocios Internacionales, siempre sentí una gran fascinación por la tecnología. Fue esta pasión la que me llevó a cambiar de carrera y adentrarme en el mundo de la programación.
+                <br>
+                Actualmente, estoy aprendiendo desarrollo web pero tambien me interesa comenzar en la inteligencia artificial, áreas que me apasionan profundamente. Disfruto creando soluciones innovadoras y explorando cómo la tecnología puede transformar nuestro mundo. Estoy emocionado por seguir aprendiendo y creciendo en este campo dinámico.
+            </p>
+         </section>
+         <section id="tecnologias-favoritas">
+            <h2>Mis Tecnologías favoritas</h2>
+            <div class="tarjetas-tecnologias">
+                <div class="tarjeta">
+                    <h3>HTML5</h3>
+                    <img src="assets/img/html.png" alt="HTML5">
+                </div>
+                <div class="tarjeta">
+                    <h3>CSS</h3>
+                    <img src="assets/img/CSS.png" alt="CSS">
+                </div>
+                <div class="tarjeta">
+                    <h3>JavaScript</h3>
+                    <img src="assets/img/JS.png" alt="JavaScript">
+                </div>
+                <div class="tarjeta">
+                    <h3>Python</h3>
+                    <img src="assets/img/python.png" alt="Python">
+                </div>
+                <div class="tarjeta">
+                    <h3>Typescript</h3>
+                    <img src="assets/img/typescript.png" alt="Typescript">
+                </div>
+            </div>
+         </section>  
+         <section>
+            <h2>Mis Actividades Favoritas</h2>
+            <form class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+              
+                <label for="imagen-url">URL de Imagen:</label>
+                <input type="url" id="imagen-url" name="imagen-url" required>
+              
+                <button type="submit">Enviar</button>
+              </form>
+            <div>
+                <!-- Aqui Iran se mostraran las tarjetas -->
+            </div>
+         </section> 
+    </main>
+    <footer>
+        <h4>Esta es mi pagina Web</h4>
+    </footer>
 </body>
 </html>
