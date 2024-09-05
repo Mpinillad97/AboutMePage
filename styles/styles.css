@@ -1,3 +1,11 @@
+.parrafo {
+    font-style: arial;
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px;
+    text-align: justify;
+  }
+
 .tarjeta {
     width: 200px; /* Tamaño fijo para todas las tarjetas */
     height: 200px; /* Altura fija para todas las tarjetas */
@@ -95,5 +103,7 @@ h2 {
     margin-bottom: 5px; 
   }
 
+
+  
 
 
