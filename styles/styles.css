@@ -1,10 +1,66 @@
-.parrafo {
-    font-style: arial;
-    font-size: 1.5em;
+body {
+  font-family: "Poppins" sans-serif;
+}
+.encabezado {
+  display: flex;
+  padding: 2em;
+  justify-content: space-evenly;
+  border-radius: 21px;
+  border-radius: 21px;
+  background: #42e9ff;
+  box-shadow:  17px 17px 42px #30a8b8,
+             -17px -17px 42px #54ffff;
+}
+
+.encabezado_title {
+    font-size: large;
+    font-weight: 700;
     color: #333;
-    padding: 10px;
-    text-align: justify;
-  }
+    border-bottom: 2em;
+    text-align: center;
+}
+
+.encabezado_lista {
+  display: flex;
+  width: 300px;
+  justify-content: space-evenly;
+  font-size: large;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  border: 1px solid red;
+  width: 100%;
+}
+
+.aboutMe {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-style: arial;
+  font-size: 1.5em;
+  color: #333;
+  padding: 2em;
+  border-radius: 30px;
+  background-color: gray;
+}
+
+.aboutMe p {
+  text-align: justify;
+}
+
+.tecnologias {
+  border: 1px solid;
+  border-radius: 30px;
+  background-color: gray;
+  width: 800px;
+  text-align: center;
+}
 
 .tarjeta {
     width: 200px; /* Tamaño fijo para todas las tarjetas */
@@ -39,21 +95,6 @@
 .tarjeta img {
     max-width: 100%;
     max-height: 60%;
-}
-
-.tarjeta h3 {
-    text-align: center;
-    font-weight: bold;
-}
-
-h1 {
-    font-family: Arial, sans-serif;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    border-bottom: 2em;
-    padding: 0.5em 0;
-    text-align: center;
 }
 
 h2 {
