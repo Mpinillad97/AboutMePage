@@ -1,23 +1,24 @@
 body {
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: #F1F6F9; 
+  color: #333; 
 }
+
 .encabezado {
   display: flex;
   padding: 2em;
   justify-content: space-evenly;
   border-radius: 21px;
-  border-radius: 21px;
-  background: #42e9ff;
-  box-shadow:  17px 17px 42px #30a8b8,
-             -17px -17px 42px #54ffff;
+  background: #87CEFA; /* Azul claro */
+  box-shadow: 17px 17px 42px #AEEEEE, 
+              -17px -17px 42px #AEEEEE; 
 }
 
 .encabezado_title {
-    font-size: large;
-    font-weight: 700;
-    color: #333;
-    border-bottom: 2em;
-    text-align: center;
+  font-size: large;
+  font-weight: 700;
+  color: #021931; 
+  text-align: center;
 }
 
 .encabezado_lista {
@@ -32,117 +33,177 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  border: 1px solid red;
   width: 100%;
+  padding: 0 2em;
+}
+
+section {
+  padding: 2em;
+  margin: 2em 0;
 }
 
 .aboutMe {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-style: arial;
   font-size: 1.5em;
   color: #333;
   padding: 2em;
   border-radius: 30px;
-  background-color: gray;
+  background-color: #D9E3F0; 
+  text-align: center;
+  width: 90%;
 }
 
 .aboutMe p {
   text-align: justify;
 }
 
+.bottomContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.tecnologias, .formulario {
+  width: 48%;
+}
+
 .tecnologias {
-  border: 1px solid;
   border-radius: 30px;
-  background-color: gray;
-  width: 800px;
+  background-color: #D9E3F0; 
   text-align: center;
 }
 
 .tarjeta {
-    width: 200px; /* Tamaño fijo para todas las tarjetas */
-    height: 200px; /* Altura fija para todas las tarjetas */
-    border: 1em;
-    align-items: center;
-    text-align: center;
-    background-color: #f4f4f4;
-    border: 1px solid;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: transform 0.4s ease;
-    
+  width: 200px; /* Tamaño fijo para todas las tarjetas */
+  height: 200px; /* Altura fija para todas las tarjetas */
+  align-items: center;
+  text-align: center;
+  background-color: #FFFFFF; 
+  border: 1px solid #0B6E99; 
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.4s ease;
 }
 
 .tarjeta:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .tarjetas-tecnologias {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    box-sizing: border-box;
-    padding: 2em;
-    justify-content: space-between;
-    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 2em;
+  justify-content: space-between;
 }
 
 .tarjeta img {
-    max-width: 100%;
-    max-height: 60%;
+  max-width: 100%;
+  max-height: 60%;
 }
 
-h2 {
-    font-size: 2em;
-    font-family: Arial, sans-serif;
-    color: #021931;
+.actividadesFavoritas {
+  padding: 2em;
+  border-radius: 30px;
+  background-color: #D9E3F0; /* Gris suave */
+  text-align: center;
+  width: 52%;
 }
 
 .formulario {
-    max-width: 600px; 
-    margin: 0 auto;
-    padding: 2em;
-    border: 0.2em solid #ddd;
-    border-radius: 0.3em;
-    background-color: #f9f9f9;
-  }
+  margin: 0 auto;
+  padding: 2em;
+  border: 0.2em solid #ddd;
+  border-radius: 0.3em;
+  background-color: #FFFFFF; /* Fondo blanco para el formulario */
+  width: 70%;
+}
 
-  .formulario input,
-  .formulario textarea {
-    display: block;
-    font-size: 2em;
-    margin-bottom: 1em;
-    border: 0.04em solid #ccc;
-    width: 100%;
-    border-radius: 0.3em;
-    font-size: 2em;
-  }
+.formulario input,
+.formulario textarea {
+  display: block;
+  font-size: 2em;
+  margin-bottom: 1em;
+  border: 0.04em solid #CCC;
+  width: 100%;
+  border-radius: 0.3em;
+  font-size: 2em;
+}
 
-  .formulario button {
-    background-color: #007BFF; 
-    color: white; 
-    border: none; 
-    border-radius: 0.3em; 
-    padding: 15px; 
-    font-size: 16px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
-  }
+.formulario button {
+  background-color: #007BFF; /* Azul inicial */
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .formulario button:hover {
-    background-color: #0056b3; 
-  }
+.formulario button:hover {
+  background-color: #0056b3; /* Azul oscuro */
+}
 
-  .formulario label {
-    font-weight: bold; 
-    display: block; 
-    margin-bottom: 5px; 
-  }
+.formulario label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #ff6f00; /* Color de hover para enlaces */
+}
+
+footer {
+  background-color: #333;
+  color: #F1F6F9;
+  padding: 2em;
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 2em;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info p, .footer-contact p {
+  margin: 0.5em 0;
+}
+
+.footer-info, .footer-links, .footer-contact {
+  margin-bottom: 1em;
+}
+
+.footer-links a, .footer-contact a {
+  color: #F1F6F9;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+  color: #ff6f00; /* Color de hover para enlaces */
+}
+
+
 
 
   
