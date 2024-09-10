@@ -10,13 +10,15 @@ class Activity {
 class Repository {
     constructor() {
         this.activities = [];
-        this.currentID = 1; //Esto va a inicializar el ID en 1 para que sea secuencial
+        this.id = 1; //Esto va a inicializar el ID en 1 para que sea secuencial
     }
 
     //Un metodo que reciba datos de una actividad, cree una actividad nueva y la guarde en su array
     createActivity(title, description, imgURL) {
-        this.activities.push(newActivity);
-        this.currentID++; //Incrementa el ID para que se asigne el siguiente numero 
+        const activityID = this.id 
+        const newActivity = new Activity(activityID, title, description, imgURL);
+        this.activities.push(newActivity)
+        this.id++;
     }
 
     //Un metodo que le permita retornar todas las actividades
