@@ -203,8 +203,54 @@ footer {
   color: #ff6f00; /* Color de hover para enlaces */
 }
 
+/* Estilo para las tarjetas de la actividad */
+
+#cardHolder {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center; 
+  padding: 1em;
+}
+
+.activity-card {
+  width: 200px; 
+  height: 200px; 
+  align-items: center;
+  text-align: center;
+  background-color: #FFFFFF; 
+  border: 1px solid #0B6E99; 
+  border-radius: 15px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+.activity-card:hover {
+  transform: scale(1.1); 
+}
 
 
+.activity-title {
+  font-size: 1.2em; 
+  margin-bottom: 0.5em; 
+  color: #021931; 
+}
+
+/* Estilo para la descripción dentro de la tarjeta */
+.activity-description {
+  font-size: 1em; 
+  margin-bottom: 0.5em; 
+  color: #333; 
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.activity-image {
+  max-width: 100%; 
+  max-height: 60%; 
+  border-radius: 10px; 
+}
 
   
 
