@@ -11,7 +11,7 @@ const cardHolder = document.getElementById("cardHolder");
 
 //Funcion que convierte una instancia de Activity en un elemento HTML
 function createActivityCard(activity) {
-    const { id, title, description, imgURL } = activity;
+    const { id, title, description, imgUrl } = activity;
 
     const activityCard = document.createElement('div');
     const activityTitle = document.createElement('h3');
@@ -20,7 +20,7 @@ function createActivityCard(activity) {
 
     activityTitle.innerHTML = title;
     activityDescription.innerHTML = description;
-    activityImage.src = imgURL;
+    activityImage.src = imgUrl;
 
     activityCard.classList.add('activity-card');
     activityTitle.classList.add('activity-title');
@@ -54,15 +54,20 @@ function handler (event) {
     event.preventDefault();
     const title = inputTitle.value;
     const description = inputDescription.value;
-    const imgURL = inputImgUrl.value;
+    const imgUrl = inputImgUrl.value;
 
-    if (!title || !description || !imgURL) {
+    if (!title || !description || !imgUrl) {
         alert("Por favor, completa todos los campos.");
         return;
     }
 
-    repository.createActivity(title, description, imgURL);
+    repository.createActivity(title, description, imgUrl);
 
     displayActivities();
+
+    // Limpiar el formulario
+    inputTitle.value = '';
+    inputDescription.value = '';
+    inputImgUrl.value = '';
 }
 

@@ -1,8 +1,8 @@
 class Activity {
-    constructor(id, title, description, imgURL) {
+    constructor(id, title, description, imgUrl) {
         this.title = title;
         this.description = description;
-        this.imgURL = imgURL;
+        this.imgUrl = imgUrl;
         this.id = id;
     }
 }
@@ -14,9 +14,9 @@ class Repository {
     }
 
     //Un metodo que reciba datos de una actividad, cree una actividad nueva y la guarde en su array
-    createActivity(title, description, imgURL) {
+    createActivity(title, description, imgUrl) {
         const activityID = this.id 
-        const newActivity = new Activity(activityID, title, description, imgURL);
+        const newActivity = new Activity(activityID, title, description, imgUrl);
         this.activities.push(newActivity)
         this.id++;
     }
