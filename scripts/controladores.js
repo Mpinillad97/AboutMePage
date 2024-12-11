@@ -1,15 +1,11 @@
-// Seleccionar el input de título
+// Seleccionar los elementos del DOM necesarios
 const inputTitle = document.getElementById("nombre");
-// Seleccionar el input de descripción
 const inputDescription = document.getElementById("descripcion");
-// Seleccionar el input de URL de imagen
 const inputImgUrl = document.getElementById("imagen-url");
-// Seleccionar el botón de enviar
 const submitButton = document.getElementById("enviar");
-// Seleccionar el contenedor de tarjetas
 const cardHolder = document.getElementById("cardHolder");
 
-//Funcion que convierte una instancia de Activity en un elemento HTML
+// Función que convierte una instancia de Activity en un elemento HTML
 function createActivityCard(activity) {
     const { id, title, description, imgUrl } = activity;
 
@@ -29,8 +25,8 @@ function createActivityCard(activity) {
 
     // Añadir funcionalidad para eliminar la tarjeta al hacer clic en la tarjeta completa
     activityCard.addEventListener('click', function() {
-        repository.deleteActivity(id); 
-        displayActivities(); 
+        repository.deleteActivity(id);
+        displayActivities();
     });
 
     activityCard.appendChild(activityTitle);
@@ -40,17 +36,16 @@ function createActivityCard(activity) {
     return activityCard;
 }
 
-// Funcion que se encarga de "convertir" todas las instancias de Activity ne elementos HTML
-function displayActivities () {
-    const cardHolder = document.getElementById("cardHolder");
+// Función que convierte todas las instancias de Activity en elementos HTML y los muestra
+function displayActivities() {
     cardHolder.innerHTML = '';
     const activities = repository.getAllActivities();
-    const ActivityCards = activities.map(createActivityCard);
-    ActivityCards.forEach(card => cardHolder.appendChild(card));
+    const activityCards = activities.map(createActivityCard);
+    activityCards.forEach(card => cardHolder.appendChild(card));
 }
 
-// handler
-function handler (event) {
+// Función manejadora del evento de enviar el formulario
+function handler(event) {
     event.preventDefault();
     const title = inputTitle.value;
     const description = inputDescription.value;
@@ -61,8 +56,8 @@ function handler (event) {
         return;
     }
 
+    // Crear una nueva actividad y actualizar la vista
     repository.createActivity(title, description, imgUrl);
-
     displayActivities();
 
     // Limpiar el formulario
@@ -70,4 +65,3 @@ function handler (event) {
     inputDescription.value = '';
     inputImgUrl.value = '';
 }
-

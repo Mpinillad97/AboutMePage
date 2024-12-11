@@ -28,6 +28,7 @@ body {
   font-size: large;
 }
 
+/* Contenedor Principal */
 .container {
   display: flex;
   justify-content: center;
@@ -42,6 +43,7 @@ section {
   margin: 2em 0;
 }
 
+/* Seccion sobre mi */
 .aboutMe {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -58,6 +60,7 @@ section {
   text-align: justify;
 }
 
+/* Seccion inferior */
 .bottomContent {
   display: flex;
   justify-content: space-between;

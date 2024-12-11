@@ -1,5 +1,7 @@
+// Crear una instancia del repositorio
 const repository = new Repository();
 
-// Añadido de event listener a boton de enviar
+// Agregar un event listener al botón de enviar para manejar el envío del formulario
 submitButton.addEventListener('click', handler);
+
 
