@@ -16,19 +16,23 @@ Este es mi primer proyecto web creado para la presentación personal. La página
 Para ejecutar este proyecto localmente, sigue estos pasos:
 
 1. **Clonar el repositorio**:
-    ```bash
     git clone https://github.com/Mpinillad97/AboutMePage.git
-    ```
+
 2. **Navegar al directorio del proyecto**:
-    ```bash
     cd AboutMePage
-    ```
+    
 
 ## Uso
 
 1. Abre el archivo `index.html` en tu navegador para ver la página web.
 2. Usa el formulario en la sección "Mis actividades favoritas" para añadir nuevas actividades.
 3. Las actividades se mostrarán en la sección correspondiente y pueden eliminarse haciendo clic en ellas.
+
+### Pruebas 
+
+Este proyecto utiliza **Jasmine** para pruebas automatizadas. Las pruebas se encuentran en el directorio `spec` y se pueden ejecutar con el siguiente comando: 
+
+npx jasmine
 
 ## Estructura del Proyecto
 
@@ -41,6 +45,7 @@ AboutMePage/ ├── assets/ │ └── img/ │ ├── CSS.png│ ├�
 - HTML5
 - CSS3
 - JavaScript
+- Jasmine
 
 ### Contribución
 
@@ -48,7 +53,7 @@ AboutMePage/ ├── assets/ │ └── img/ │ ├── CSS.png│ ├�
 
 ### Autor
 
-- **Mateo Pinilla** - [GitHub](https://github.com/mateopinilla) | [LinkedIn](https://www.linkedin.com/in/mateopinilla)
+- **Mateo Pinilla** - [GitHub](https://github.com/Mpinillad97) | [LinkedIn](https://www.linkedin.com/in/mateopinilladavila)
 
 ### Licencia
 
@@ -72,19 +77,23 @@ This is my first web project created for personal presentation. The page include
 To run this project locally, follow these steps:
 
 1. **Clone the repository**:
-    ```bash
     git clone https://github.com/Mpinillad97/AboutMePage.git
-    ```
+
 2. **Navigate to the project directory**:
-    ```bash
     cd AboutMePage
-    ```
+
 
 ### Usage
 
 1. Open the `index.html` file in your browser to view the webpage.
 2. Use the form in the "My Favorite Activities" section to add new activities.
 3. Activities will be displayed in the corresponding section and can be deleted by clicking on them.
+
+## Testing
+
+This project uses Jasmine for automated testing. Tests are located in the spec directory and can be run with the following command:
+
+npx jasmine
 
 ### Project Structure
 
@@ -96,6 +105,7 @@ AboutMePage/ ├── assets/ │ └── img/ │ ├── CSS.png│ ├�
 - HTML5
 - CSS3
 - JavaScript
+- Jasmine
 
 ### Contributing
 
