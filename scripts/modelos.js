@@ -34,4 +34,4 @@ class Repository {
     }
 }
 
-module.exports = { Activity, Repository}
+module.exports = { Activity, Repository }
